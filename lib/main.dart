@@ -1,4 +1,4 @@
-import 'package:ecommerce/pages/detail/home.dart';
+import 'package:ecommerce/pages/home/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,15 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: "Salut",
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text("Ma app bar"),
-            centerTitle: true,
-            backgroundColor: Colors.red,
-          ),
-        ));
+    return const MaterialApp(
+        title: "Salut", debugShowCheckedModeBanner: false, home: HomePage());
   }
 }
