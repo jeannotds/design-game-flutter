@@ -1,3 +1,4 @@
+import 'package:ecommerce/pages/home/widget/header.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -29,8 +30,10 @@ class HomePage extends StatelessWidget {
                     width: 200,
                   ),
                 )),
-            Container(
-              color: Colors.red,
+            const Column(
+              children: [
+                HeaderSection(),
+              ],
             )
           ],
         ),
