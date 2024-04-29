@@ -19,13 +19,17 @@ class HeaderSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment
                 .start, // permet de decaler les elements en au debut
             children: [
+              SizedBox(
+                height: 15,
+              ),
               Text(
                 "Welcome",
                 // TextStyle Permet de manipuler le texte
                 style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22),
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22,
+                ),
               ),
               SizedBox(
                 height: 5,
