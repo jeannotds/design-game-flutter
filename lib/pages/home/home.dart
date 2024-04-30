@@ -1,3 +1,4 @@
+import 'package:ecommerce/pages/home/widget/category.dart';
 import 'package:ecommerce/pages/home/widget/header.dart';
 import 'package:ecommerce/pages/home/widget/search.dart';
 import 'package:flutter/material.dart';
@@ -31,11 +32,8 @@ class HomePage extends StatelessWidget {
                     width: 200,
                   ),
                 )),
-            const Column(
-              children: [
-                HeaderSection(),
-                SearchSelection(),
-              ],
+            Column(
+              children: [HeaderSection(), SearchSelection(), CategorySection()],
             )
           ],
         ),
