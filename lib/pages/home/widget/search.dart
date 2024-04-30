@@ -28,9 +28,14 @@ class SearchSelection extends StatelessWidget {
                 prefixIcon: const Icon(
                   Icons.search_outlined,
                   size: 30,
+                  // color: Colors.red.withOpacity(0.7),
                 ),
                 //Placeholder
-                hintText: 'Search game'),
+                hintText: 'Search game',
+                //Change color of Placeholder
+                hintStyle: TextStyle(
+                  color: Colors.grey.withOpacity(0.7),
+                )),
           ),
           Positioned(
               //positionner l element à droite
