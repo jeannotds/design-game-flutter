@@ -32,7 +32,10 @@ class HomePage extends StatelessWidget {
                   ),
                 )),
             const Column(
-              children: [HeaderSection(), SearchSelection()],
+              children: [
+                HeaderSection(),
+                SearchSelection(),
+              ],
             )
           ],
         ),
