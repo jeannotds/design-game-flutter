@@ -34,24 +34,44 @@ class CategorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 500,
       decoration: const BoxDecoration(
           color: Color(0xFFF6F8FF),
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(20),
             topRight: Radius.circular(20),
           )),
-      height: 500,
       child: Column(
         children: [
           Container(
-            height: 120,
-            color: Colors.red,
+            height: 140,
+            // color: Colors.green,
             child: ListView.separated(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 scrollDirection: Axis.horizontal,
-                itemBuilder: ((context, index) => Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.yellow,
+                itemBuilder: ((context, index) => Column(
+                      children: [
+                        const SizedBox(
+                          height: 25,
+                        ),
+                        Container(
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: categories[index]['color'] as Color),
+                          child: Icon(
+                            categories[index]['icon'] as IconData,
+                            color: Colors.white,
+                            size: 40,
+                          ),
+                        ),
+                        Text(
+                            style: TextStyle(
+                                color: Colors.black.withOpacity(0.7),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16),
+                            categories[index]['title'] as String)
+                      ],
                     )),
                 separatorBuilder: ((context, index) => const SizedBox(
                       width: 33,
