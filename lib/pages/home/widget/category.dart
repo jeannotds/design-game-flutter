@@ -1,3 +1,4 @@
+import 'package:ecommerce/pages/home/widget/popular.dart';
 import 'package:flutter/material.dart';
 
 class CategorySection extends StatelessWidget {
@@ -34,6 +35,7 @@ class CategorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       height: 500,
       decoration: const BoxDecoration(
           color: Color(0xFFF6F8FF),
@@ -42,12 +44,14 @@ class CategorySection extends StatelessWidget {
             topRight: Radius.circular(20),
           )),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: 140,
+            // padding: const EdgeInsets.symmetric(horizontal: 20),
             // color: Colors.green,
             child: ListView.separated(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                // padding: const EdgeInsets.symmetric(horizontal: 20),
                 scrollDirection: Axis.horizontal,
                 itemBuilder: ((context, index) => Column(
                       children: [
@@ -78,6 +82,11 @@ class CategorySection extends StatelessWidget {
                     )),
                 itemCount: categories.length),
           ),
+          const Text(
+            "Popular game",
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          ),
+          PopularGame()
         ],
       ),
     );
