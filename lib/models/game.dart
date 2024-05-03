@@ -41,7 +41,22 @@ class Game {
       Game(
         'assets/images/ori4.jpg',
         'assets/images/legend1.jpg',
-        'legend1 and the forest',
+        'forest legend1 and the',
+        'Adventure',
+        4.8,
+        // 382,
+        324,
+        "Ori is stranger to peril, bu when a fateful flight puts the owlet ku in har'ms way.",
+        [
+          'assets/images/ori4.jpg',
+          'assets/images/ori5.jpg',
+          'assets/images/ori4.jpg',
+        ],
+      ),
+      Game(
+        'assets/images/ori5.jpg',
+        'assets/images/legend1.jpg',
+        'the forest and legend1',
         'Adventure',
         4.8,
         // 382,
