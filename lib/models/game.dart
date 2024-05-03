@@ -25,7 +25,7 @@ class Game {
     return [
       Game(
         'assets/images/ori1.jpg',
-        'assets/images/ori_logo.png',
+        'assets/images/rl5.jpg',
         'Ori and the forest',
         'Adventure',
         4.8,
@@ -40,7 +40,7 @@ class Game {
       ),
       Game(
         'assets/images/ori4.jpg',
-        'assets/images/legend1.jpg',
+        'assets/images/legend4.jpg',
         'forest legend1 and the',
         'Adventure',
         4.8,
@@ -55,7 +55,7 @@ class Game {
       ),
       Game(
         'assets/images/ori5.jpg',
-        'assets/images/legend1.jpg',
+        'assets/images/rl3.jpg',
         'the forest and legend1',
         'Adventure',
         4.8,

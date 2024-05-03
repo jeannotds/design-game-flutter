@@ -1,3 +1,4 @@
+import 'package:ecommerce/pages/home/widget/newest.dart';
 import 'package:ecommerce/pages/home/widget/popular.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,7 @@ class CategorySection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      height: 500,
+      // height: 500,
       decoration: const BoxDecoration(
           color: Color(0xFFF6F8FF),
           borderRadius: BorderRadius.only(
@@ -82,11 +83,22 @@ class CategorySection extends StatelessWidget {
                     )),
                 itemCount: categories.length),
           ),
-          const Text(
-            "Popular game",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: const Text(
+              "Popular game",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
           ),
-          PopularGame()
+          PopularGame(),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: const Text(
+              "Newest game",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+          ),
+          NewstGame()
         ],
       ),
     );
