@@ -78,7 +78,7 @@ class NewstGame extends StatelessWidget {
                                     color: const Color(0xFF5F67EA),
                                     borderRadius: BorderRadius.circular(30)),
                                 child: const Text(
-                                  'Istall',
+                                  'Install',
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 11),
                                 ),
