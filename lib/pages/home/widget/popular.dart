@@ -15,6 +15,7 @@ class PopularGame extends StatelessWidget {
       color: Colors.white,
       child: ListView.separated(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          //La direction scrollable des elemen
           scrollDirection: Axis.horizontal,
           // GestureDetector : Permet de cliquer sur un widget en l interieur
           itemBuilder: ((context, index) => GestureDetector(
@@ -30,15 +31,19 @@ class PopularGame extends StatelessWidget {
                   elevation: 5,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15)),
-                  child: ClipRRect(
-                      // ClipRRect ne prend pas padding: const EdgeInsets.all(5),
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 3, vertical: 3),
+                    child: ClipRRect(
+                        // ClipRRect ne prend pas padding: const EdgeInsets.all(5),
 
-                      borderRadius: BorderRadius.circular(15),
+                        borderRadius: BorderRadius.circular(15),
 
-                      // Hero Pour l animation
-                      child: Hero(
-                          tag: games[index].name ?? "",
-                          child: Image.asset(games[index]?.bgImage ?? ""))),
+                        // Hero Pour l animation
+                        child: Hero(
+                            tag: games[index].name,
+                            child: Image.asset(games[index]?.bgImage ?? ""))),
+                  ),
                 ),
               )),
 
