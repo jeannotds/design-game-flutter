@@ -1,13 +1,13 @@
 class Game {
   // Declare y, initially null.
-  String? bgImage;
-  String? icon;
-  String? name;
-  String? type;
-  num? score;
-  num? review;
-  String? description;
-  List<String>? images;
+  String bgImage;
+  String icon;
+  String name;
+  String type;
+  num score;
+  num review;
+  String description;
+  List<String> images;
 
   Game(
     this.bgImage,
