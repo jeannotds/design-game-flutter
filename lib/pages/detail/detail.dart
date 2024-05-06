@@ -24,6 +24,9 @@ class DetailGame extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
+            borderRadius: const BorderRadius.only(
+                bottomLeft: Radius.circular(40),
+                bottomRight: Radius.circular(40)),
             child: Image.asset(game.bgImage),
           ),
           Container(
@@ -34,7 +37,7 @@ class DetailGame extends StatelessWidget {
                 Text(
                   game.name,
                   style: const TextStyle(
-                      fontSize: 19, fontWeight: FontWeight.bold),
+                      fontSize: 25, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
                   height: 10,
@@ -42,7 +45,7 @@ class DetailGame extends StatelessWidget {
                 Text(
                   game.description,
                   style: const TextStyle(
-                    fontSize: 16,
+                    fontSize: 18,
                   ),
                 ),
                 Row(
@@ -51,21 +54,25 @@ class DetailGame extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                       child: Image.asset(
                         game.icon,
-                        width: 50,
-                        height: 50,
+                        width: 60,
+                        height: 60,
                       ),
                     ),
                     const SizedBox(
-                      width: 10,
+                      width: 12,
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(game.type),
+                        Text(
+                          game.type,
+                          style: const TextStyle(fontSize: 16),
+                        ),
                         const Row(
                           children: [
                             Icon(
                               Icons.star,
-                              size: 12,
+                              size: 13,
                               color: Color.fromARGB(255, 240, 106, 3),
                             ),
                             Icon(

@@ -41,8 +41,8 @@ class Game {
       Game(
         'assets/images/ori4.jpg',
         'assets/images/legend4.jpg',
-        'forest legend1 and the',
-        'Adventure',
+        'forest legend and the',
+        'comedy',
         4.8,
         // 382,
         324,
@@ -56,8 +56,8 @@ class Game {
       Game(
         'assets/images/ori5.jpg',
         'assets/images/rl3.jpg',
-        'the forest and legend1',
-        'Adventure',
+        'Mortal combat',
+        'Action',
         4.8,
         // 382,
         324,
