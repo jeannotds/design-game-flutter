@@ -47,7 +47,8 @@ class CategorySection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
+          // replace Container() to SizedBox()
+          SizedBox(
             height: 140,
             // padding: const EdgeInsets.symmetric(horizontal: 20),
             // color: Colors.green,
